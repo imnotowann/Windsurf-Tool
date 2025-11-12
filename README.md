@@ -212,7 +212,7 @@ IMAP服务器: imap.163.com
 
 ### macOS 打包
 
-#### 方法一：使用打包脚本（推荐）
+#### 使用打包脚本（推荐）
 
 ```bash
 # 运行交互式打包脚本
@@ -226,7 +226,7 @@ chmod +x build.sh
 # 4) 全平台
 ```
 
-#### 方法二：使用 npm 命令
+#### 使用 npm 命令
 
 ```bash
 # 打包 macOS 版本（x64 + arm64）
@@ -234,14 +234,9 @@ npm run build:mac
 
 # 仅打包 arm64 版本（Apple Silicon）
 npm run build:mac-arm64
-
-# 打包所有平台
-npm run build
 ```
 
 #### 打包产物
-
-打包完成后，文件位于 `dist/` 目录：
 
 ```
 dist/
@@ -255,22 +250,58 @@ dist/
 
 1. 打开 `.dmg` 文件
 2. 将 `Windsurf-Tool 1.0` 拖拽到 `Applications` 文件夹
-3. 首次运行时，右键点击应用选择"打开"（绕过 Gatekeeper）
+
+---
 
 ### Windows 打包
 
-**注意：当前版本未完全适配 Windows，打包仅供测试。**
+#### ⚠️ 重要提示
+
+**必须在 Windows 系统上打包**，以确保 robotjs 等原生模块正确编译。
+
+#### 前置要求
+
+1. **Windows 10/11 系统**
+2. **Node.js 16+**
+3. **Visual Studio Build Tools**
+
+```powershell
+# 安装构建工具
+npm install --global windows-build-tools
+```
+
+#### 打包步骤
 
 ```bash
-# 在 macOS 或 Linux 上交叉编译 Windows 版本
+# 1. 安装依赖
+npm install
+
+# 2. 打包 Windows 版本
 npm run build:win
 ```
 
-打包产物：
+#### 打包产物
+
 ```
 dist/
-└── Windsurf-Tool 1.0 Setup 1.0.0.exe
+├── Windsurf-Tool 1.0-1.0.0-x64.exe      # NSIS 安装程序
+└── Windsurf-Tool-1.0.0-portable.exe     # 便携版（免安装）
 ```
+
+#### 安装方式
+
+**安装程序版：**
+1. 双击 `Windsurf-Tool 1.0-1.0.0-x64.exe`
+2. 按照向导完成安装
+3. 从桌面或开始菜单启动
+
+**便携版：**
+1. 直接运行 `Windsurf-Tool-1.0.0-portable.exe`
+2. 无需安装，配置保存在程序目录
+
+#### 详细说明
+
+查看完整的 Windows 打包指南：[WINDOWS_BUILD.md](WINDOWS_BUILD.md)
 
 ---
 

@@ -257,20 +257,57 @@ dist/
 2. Drag `Windsurf-Tool 1.0` to `Applications` folder
 3. First run: Right-click app and select "Open" (bypass Gatekeeper)
 
+---
+
 ### Windows Build
 
-**Note: Current version is not fully adapted for Windows, build is for testing only.**
+#### ⚠️ Important Note
+
+**Must build on Windows system** to ensure native modules (like robotjs) compile correctly.
+
+#### Prerequisites
+
+1. **Windows 10/11 system**
+2. **Node.js 16+**
+3. **Visual Studio Build Tools**
+
+```powershell
+# Install build tools
+npm install --global windows-build-tools
+```
+
+#### Build Steps
 
 ```bash
-# Cross-compile Windows version on macOS or Linux
+# 1. Install dependencies
+npm install
+
+# 2. Build Windows version
 npm run build:win
 ```
 
-Build output:
+#### Build Output
+
 ```
 dist/
-└── Windsurf-Tool 1.0 Setup 1.0.0.exe
+├── Windsurf-Tool 1.0-1.0.0-x64.exe      # NSIS installer
+└── Windsurf-Tool-1.0.0-portable.exe     # Portable version (no install)
 ```
+
+#### Installation
+
+**Installer version:**
+1. Double-click `Windsurf-Tool 1.0-1.0.0-x64.exe`
+2. Follow the installation wizard
+3. Launch from desktop or start menu
+
+**Portable version:**
+1. Run `Windsurf-Tool-1.0.0-portable.exe` directly
+2. No installation needed, config saved in program directory
+
+#### Detailed Guide
+
+See complete Windows build guide: [WINDOWS_BUILD.md](WINDOWS_BUILD.md)
 
 ---
 

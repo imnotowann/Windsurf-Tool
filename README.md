@@ -88,25 +88,61 @@ npm run dev
 
 ### 1. 配置邮箱
 
-进入"配置"页面，设置以下信息：
+#### 步骤 1：设置 Cloudflare 邮箱转发
 
-#### 邮箱域名配置
-添加你的域名邮箱后缀，例如：
+本工具使用 Cloudflare Email Routing 实现邮箱转发功能，完全免费且无需购买企业邮箱。
+
+**前置条件：**
+- 拥有一个域名（可在 Cloudflare、阿里云、腾讯云等购买）
+- 域名已托管到 Cloudflare（免费）
+
+**配置步骤：**
+
+1. **登录 Cloudflare 控制台**
+   - 访问 https://dash.cloudflare.com
+   - 选择你的域名
+
+2. **启用 Email Routing**
+   - 进入 `Email` → `Email Routing`
+   - 点击 `Enable Email Routing`
+   - Cloudflare 会自动配置所需的 DNS 记录（MX、TXT）
+
+3. **设置 Catch-all 地址**
+   - 在 `Routing Rules` 中点击 `Catch-all address`
+   - 选择 `Action`: `Send to an email`
+   - 输入你的接收邮箱（如 `your@gmail.com` 或 `your@qq.com`）
+   - 点击 `Save`
+
+4. **验证接收邮箱**
+   - Cloudflare 会发送验证邮件到你的接收邮箱
+   - 点击邮件中的验证链接完成验证
+
+**工作原理：**
+- 发送到 `任意用户名@yourdomain.com` 的邮件
+- 会自动转发到你配置的接收邮箱
+- 无需为每个邮箱单独配置
+
+#### 步骤 2：配置域名和 IMAP
+
+进入工具的"配置"页面，设置以下信息：
+
+**邮箱域名配置：**
+添加你在 Cloudflare 配置的域名，例如：
 - `example.com`
 - `yourdomain.com`
 
-注册时会自动生成格式为 `user_xxxxx@yourdomain.com` 的邮箱
+注册时会自动生成格式为 `user_xxxxx@yourdomain.com` 的邮箱，所有邮件会转发到你的接收邮箱。
 
-#### IMAP 邮箱配置
+**IMAP 邮箱配置：**
 
-配置用于接收验证码的邮箱 IMAP 信息：
+配置你的接收邮箱的 IMAP 信息（即 Cloudflare 转发的目标邮箱）：
 
 **QQ 邮箱示例：**
 ```
 IMAP服务器: imap.qq.com
 端口: 993
 邮箱账号: your@qq.com
-密码: 授权码（不是QQ密码）
+密码: 授权码（不是QQ密码，需在QQ邮箱设置中生成）
 ```
 
 **Gmail 示例：**
@@ -114,10 +150,23 @@ IMAP服务器: imap.qq.com
 IMAP服务器: imap.gmail.com
 端口: 993
 邮箱账号: your@gmail.com
-密码: 应用专用密码
+密码: 应用专用密码（需在Google账号设置中生成）
+```
+
+**163 邮箱示例：**
+```
+IMAP服务器: imap.163.com
+端口: 993
+邮箱账号: your@163.com
+密码: 授权码（需在163邮箱设置中生成）
 ```
 
 配置完成后点击"测试连接"验证配置是否正确。
+
+**常见问题：**
+- ❓ **为什么需要授权码？** 出于安全考虑，邮箱服务商要求使用专门的授权码而非登录密码
+- ❓ **如何获取授权码？** 在邮箱设置中搜索"IMAP"或"授权码"，按照提示生成
+- ❓ **转发延迟？** Cloudflare Email Routing 通常在几秒内完成转发
 
 ### 2. 批量注册账号
 

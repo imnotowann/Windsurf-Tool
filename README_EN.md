@@ -88,25 +88,61 @@ npm run dev
 
 ### 1. Email Configuration
 
-Go to "Settings" page and configure:
+#### Step 1: Setup Cloudflare Email Routing
 
-#### Email Domain Configuration
-Add your domain email suffix, for example:
+This tool uses Cloudflare Email Routing for email forwarding - completely free and no need to purchase enterprise email.
+
+**Prerequisites:**
+- Own a domain (can purchase from Cloudflare, Namecheap, GoDaddy, etc.)
+- Domain hosted on Cloudflare (free)
+
+**Configuration Steps:**
+
+1. **Login to Cloudflare Dashboard**
+   - Visit https://dash.cloudflare.com
+   - Select your domain
+
+2. **Enable Email Routing**
+   - Go to `Email` → `Email Routing`
+   - Click `Enable Email Routing`
+   - Cloudflare will automatically configure required DNS records (MX, TXT)
+
+3. **Setup Catch-all Address**
+   - In `Routing Rules`, click `Catch-all address`
+   - Select `Action`: `Send to an email`
+   - Enter your receiving email (e.g., `your@gmail.com` or `your@qq.com`)
+   - Click `Save`
+
+4. **Verify Receiving Email**
+   - Cloudflare will send a verification email to your receiving address
+   - Click the verification link in the email to complete setup
+
+**How It Works:**
+- Emails sent to `any-username@yourdomain.com`
+- Will automatically forward to your configured receiving email
+- No need to configure each email individually
+
+#### Step 2: Configure Domain and IMAP
+
+Go to the tool's "Settings" page and configure:
+
+**Email Domain Configuration:**
+Add your domain configured in Cloudflare, for example:
 - `example.com`
 - `yourdomain.com`
 
-Registration will auto-generate emails in format: `user_xxxxx@yourdomain.com`
+Registration will auto-generate emails in format `user_xxxxx@yourdomain.com`, and all emails will forward to your receiving address.
 
-#### IMAP Email Configuration
+**IMAP Email Configuration:**
 
-Configure IMAP settings for receiving verification codes:
+Configure IMAP settings for your receiving email (the target email in Cloudflare forwarding):
 
 **QQ Mail Example:**
 ```
 IMAP Server: imap.qq.com
 Port: 993
 Email: your@qq.com
-Password: Authorization code (not QQ password)
+Password: Authorization code (not QQ password, generate in QQ Mail settings)
 ```
 
 **Gmail Example:**
@@ -114,10 +150,23 @@ Password: Authorization code (not QQ password)
 IMAP Server: imap.gmail.com
 Port: 993
 Email: your@gmail.com
-Password: App-specific password
+Password: App-specific password (generate in Google Account settings)
+```
+
+**Outlook Example:**
+```
+IMAP Server: outlook.office365.com
+Port: 993
+Email: your@outlook.com
+Password: Account password or app password
 ```
 
 Click "Test Connection" to verify configuration.
+
+**FAQ:**
+- ❓ **Why authorization code?** For security, email providers require special authorization codes instead of login passwords
+- ❓ **How to get authorization code?** Search for "IMAP" or "authorization code" in email settings and follow instructions
+- ❓ **Forwarding delay?** Cloudflare Email Routing typically completes forwarding within seconds
 
 ### 2. Batch Registration
 

